@@ -7,6 +7,7 @@
             'email' => 'required',
             'password' => 'required',
         ]);
+
       
          $user = User::where('email',$request->email)->first();
         if(!$user){
