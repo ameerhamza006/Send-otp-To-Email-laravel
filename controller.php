@@ -36,7 +36,7 @@
             ->from('example@gmail.com', 'Example From');
     });
        
-       return view('front.pages.logins.otp',['email'=>$request->email,'password'=>$request->password]);
+       return view('otp',['email'=>$request->email,'password'=>$request->password]);
       
         
     }
